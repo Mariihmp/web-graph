@@ -11,12 +11,11 @@ A visual knowledge graph app for ingesting websites, extracting metadata, and or
 
 ## Tech stack
 - React + TypeScript - Vite - Express - Prisma + SQLite - OpenRouter for LLM-based metadata extraction
-- 
 ## Project structure
 
-- src/ — frontend UI and graph components
-- server.ts — backend API and ingestion logic
-- prisma/ — Prisma schema and database setup
+src/ — frontend UI and graph components
+server.ts — backend API and ingestion logic
+prisma/ — Prisma schema and database setup
 
 ## Getting started
 
