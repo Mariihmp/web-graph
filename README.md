@@ -1,4 +1,4 @@
-# Second Brain Graph
+# Web Graph
 
 A visual knowledge graph app for ingesting websites, extracting metadata, and organizing them into an interactive personal knowledge map.
 
