@@ -3,7 +3,6 @@
 A visual knowledge graph app for ingesting websites, extracting metadata, and organizing them into an interactive personal knowledge map.
 
 ## What it does
-
 - Ingests URLs and scrapes their content
 - Uses AI to extract titles, descriptions, tags, and types
 - Builds a graph of nodes and semantic connections
@@ -11,13 +10,8 @@ A visual knowledge graph app for ingesting websites, extracting metadata, and or
 - Stores everything locally with Prisma and SQLite
 
 ## Tech stack
-
-- React + TypeScript
-- Vite
-- Express
-- Prisma + SQLite
-- OpenRouter for LLM-based metadata extraction
-
+- React + TypeScript - Vite - Express - Prisma + SQLite - OpenRouter for LLM-based metadata extraction
+- 
 ## Project structure
 
 - src/ — frontend UI and graph components
