@@ -1,0 +1,37 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Node {
+  id          String   @id
+  url         String
+  title       String
+  description String
+  tags        String   // JSON string containing array of tags
+  createdAt   DateTime @default(now())
+
+  isParent    Boolean  @default(false)
+  color       String?  // Hex color code, e.g., "#3B82F6"
+  parentId    String?
+  type        String?  // e.g. "Course", "Blog Post", "Tool"
+  shortTitle  String?  // Shorter version of the title
+
+  // Relations
+  edgesAsSource Edge[] @relation("SourceEdges")
+  edgesAsTarget Edge[] @relation("TargetEdges")
+}
+
+model Edge {
+  id       String @id @default(uuid())
+  sourceId String
+  targetId String
+  reason   String
+
+  source   Node   @relation("SourceEdges", fields: [sourceId], references: [id], onDelete: Cascade)
+  target   Node   @relation("TargetEdges", fields: [targetId], references: [id], onDelete: Cascade)
+}

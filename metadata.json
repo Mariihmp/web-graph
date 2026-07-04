@@ -1,0 +1,6 @@
+{
+  "name": "Second Brain Graph",
+  "description": "An interactive digital garden and second brain graph that dynamically scrapes web links, extracts semantic details using AI, and visually maps connections between nodes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
