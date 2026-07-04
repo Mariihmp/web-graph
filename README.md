@@ -53,25 +53,7 @@ npx prisma db push
 
 ```bash
 npm run dev
-```
 
-Then open http://localhost:3000.
-
-## GitHub publishing checklist
-
-1. Create a new repository on GitHub.
-2. In your local project folder, run:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/your-username/your-repo-name.git
-git push -u origin main
-```
-
-3. Make sure you do not commit secrets. Keep your .env file local and add it to .gitignore if needed.
 
 ## Notes
 
